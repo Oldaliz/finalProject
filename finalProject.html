@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="projectJS.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>WEB-115 Final Project</h1>
+        <h2>Oldaliz Perez, Course: WEB-115, Section: 001</h2>
+        <h3>Build Your Meal Plan</h3>
+    </header>
+
+    <form id="mealPlanForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="goal">Weekly Goal:</label>
+            <input type="text" id="goal" name="goal" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Meal Plan</legend>
+            <div>
+                <label for="monday">Monday:</label><br>
+                <input type="text" id="breakfastMon" placeholder="Breakfast" required>
+                <input type="text" id="snack1Mon" placeholder="Snack 1">
+                <input type="text" id="lunchMon" placeholder="Lunch" required>
+                <input type="text" id="snack2Mon" placeholder="Snack 2">
+                <input type="text" id="dinnerMon" placeholder="Dinner" required>
+            </div>
+            <div>
+                <label for="tuesday">Tuesday:</label><br>
+                <input type="text" id="breakfastTue" placeholder="Breakfast" required>
+                <input type="text" id="snack1Tue" placeholder="Snack 1">
+                <input type="text" id="lunchTue" placeholder="Lunch" required>
+                <input type="text" id="snack2Tue" placeholder="Snack 2">
+                <input type="text" id="dinnerTue" placeholder="Dinner" required>
+            </div>
+            <div>
+                <label for="wednesday">Wednesday:</label><br>
+                <input type="text" id="breakfastWed" placeholder="Breakfast" required>
+                <input type="text" id="snack1Wed" placeholder="Snack 1">
+                <input type="text" id="lunchWed" placeholder="Lunch" required>
+                <input type="text" id="snack2Wed" placeholder="Snack 2">
+                <input type="text" id="dinnerWed" placeholder="Dinner" required>
+            </div>
+            <div>
+                <label for="thursday">Thursday:</label><br>
+                <input type="text" id="breakfastThu" placeholder="Breakfast" required>
+                <input type="text" id="snack1Thu" placeholder="Snack 1">
+                <input type="text" id="lunchThu" placeholder="Lunch" required>
+                <input type="text" id="snack2Thu" placeholder="Snack 2">
+                <input type="text" id="dinnerThu" placeholder="Dinner" required>
+            </div>
+            <div>
+                <label for="friday">Friday:</label><br>
+                <input type="text" id="breakfastFri" placeholder="Breakfast" required>
+                <input type="text" id="snack1Fri" placeholder="Snack 1">
+                <input type="text" id="lunchFri" placeholder="Lunch" required>
+                <input type="text" id="snack2Fri" placeholder="Snack 2">
+                <input type="text" id="dinnerFri" placeholder="Dinner" required>
+            </div>
+            <div>
+                <label for="saturday">Saturday:</label><br>
+                <input type="text" id="breakfastSat" placeholder="Breakfast" required>
+                <input type="text" id="snack1Sat" placeholder="Snack 1">
+                <input type="text" id="lunchSat" placeholder="Lunch" required>
+                <input type="text" id="snack2Sat" placeholder="Snack 2">
+                <input type="text" id="dinnerSat" placeholder="Dinner" required>
+            </div>
+            <div>
+                <label for="sunday">Sunday:</label><br>
+                <input type="text" id="breakfastSun" placeholder="Breakfast" required>
+                <input type="text" id="snack1Sun" placeholder="Snack 1">
+                <input type="text" id="lunchSun" placeholder="Lunch" required>
+                <input type="text" id="snack2Sun" placeholder="Snack 2">
+                <input type="text" id="dinnerSun" placeholder="Dinner" required>
+            </div>
+        </fieldset>
+
+        <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+        <button type="reset">Clear Planner</button>
+    </form>
+</body>
+</html>
+
